@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #root{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.body-card{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    width: 80%;
+    height: 30%;
+    box-shadow: 0 0 5px grey;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    padding: 10px;
+    gap: 10%;
+}
+
+.description-card{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.category-card{
+    font-size: 15px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: green;
+}
+
+.joke-card{
+    font-weight: bolder;
+    color: rgb(46, 42, 42);
+}
+
+.comments-card{
+    font-weight: bolder;
+}
+
+.card-text div{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+    width: 100%;
+}
+
+.card-text button:nth-last-of-type(1){
+    width: 20%;
+    height: 150%;
+    box-shadow: 0 0 3px grey;
+    background-color: transparent;
+    border: 0px;
+}
+
+.card-text button:last-child{
+    width: 30%;
+    height: 150%;
+    background-color: transparent;
+    border: 0px;
+    box-shadow: 0 0 3px grey;
+}
+
+.frame-card-image{
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+}
+
+.frame-card-image>img{
+    object-fit: cover;
+}

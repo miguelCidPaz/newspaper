@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from "react";
+import ProductCard from './components/ProductCard';
+import './CSS/style.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            id: 0,
+            img: "https://i.blogs.es/2c91fa/instax2/1024_2000.jpeg",
+            description: "Una Polaroid venida a mas: la Fujifilm Instax Mini Evo tiene un monton de trucos que invitan a usarla con el smartphone",
+            category: "Fotografia y Video",
+            joke: "Fotos impresas a golpe de palanquita",
+            nComments: 0,
+            name: "Javier Pastor",
+            lastComment: "Hace un dia"
+        }
+    }
+
+    render() {
+        return (
+            <ProductCard content={this.state} />
+        )
+    }
 }
 
-export default App;
+export default App
