@@ -9,7 +9,6 @@ class ProductCard extends Component {
     }
 
     render() {
-        console.log(this.state)
         return (
             <section className="body-card">
 
